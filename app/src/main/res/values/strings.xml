@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RegisterApp</string>
+    <string name="text_null" />
+    <string name="text_register_set_fullname">Full Name</string>
+    <string name="text_register_set_username">Username</string>
+    <string name="text_register_set_email">Email</string>
+    <string name="text_register_set_password">Password</string>
+    <string name="text_register_set_retype_password">Re-type Password</string>
+    <string name="text_register_choice_gender">Gender</string>
+    <string name="text_register_choice_female">Female</string>
+    <string name="text_register_choice_male">Male</string>
+    <string name="text_button_register">Register</string>
+    <string name="text_button_showinfo">Show Info</string>
+    <string name="text_button_hideinfo">Hide Info</string>
+    <string name="text_toast_fullname_is_empty">FullName is empty</string>
+    <string name="text_toast_username_is_empty">Username is empty</string>
+    <string name="text_toast_email_is_empty">Email is empty</string>
+    <string name="text_toast_password_is_empty">Password is empty</string>
+    <string name="text_toast_retype_password_is_empty">Re-Type Password is empty</string>
+    <string name="text_toast_gender_is_not_choice">Re-Type Password is empty</string>
+    <string name="text_toast_password_not_match_retype_password">Password is not equals Re-Type Password</string>
+</resources>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview_main_set_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_register_set_fullname"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_main_set_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_register_set_fullname"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_set_fullname" />
+
+        <TextView
+            android:id="@+id/textview_main_set_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_register_set_username"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_set_fullname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_main_set_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_register_set_username"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_set_username" />
+
+        <TextView
+            android:id="@+id/textview_main_set_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_register_set_email"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_set_username" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_main_set_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/text_register_set_email"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_set_email" />
+
+        <TextView
+            android:id="@+id/textview_main_set_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_register_set_password"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_set_email" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_main_set_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/text_register_set_password"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_set_password" />
+
+        <TextView
+            android:id="@+id/textview_main_set_retype_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_register_set_retype_password"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_set_password" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_main_set_retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/text_register_set_retype_password"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_set_retype_password" />
+
+        <TextView
+            android:id="@+id/textview_main_choice_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_register_choice_gender"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_main_set_retype_password" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_main_choice_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textview_main_choice_gender"
+            app:layout_constraintTop_toBottomOf="@+id/textview_main_choice_gender">
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_select_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_register_choice_female" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_main_select_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/text_register_choice_male" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_main_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_button_register"
+            android:text="@string/text_button_register"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radiogroup_main_choice_gender" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_main_showInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_button_showinfo"
+            android:text="@string/text_button_showinfo"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_main_register" />
+
+        <View
+            android:id="@+id/view_main_background_show_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_main_showInfo" />
+
+        <EditText
+            android:id="@+id/edittext_main_show_fullname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_edittexts"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/view_main_background_show_fullname"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_background_show_fullname"
+            app:layout_constraintStart_toStartOf="@+id/view_main_background_show_fullname"
+            app:layout_constraintTop_toTopOf="@+id/view_main_background_show_fullname"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/view_main_background_show_username"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_main_background_show_fullname" />
+
+        <EditText
+            android:id="@+id/edittext_main_show_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_edittexts"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/view_main_background_show_username"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_background_show_username"
+            app:layout_constraintStart_toStartOf="@+id/view_main_background_show_username"
+            app:layout_constraintTop_toTopOf="@+id/view_main_background_show_username"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/view_main_background_show_email"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_main_background_show_username" />
+
+        <EditText
+            android:id="@+id/edittext_main_show_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_edittexts"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/view_main_background_show_email"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_background_show_email"
+            app:layout_constraintStart_toStartOf="@+id/view_main_background_show_email"
+            app:layout_constraintTop_toTopOf="@+id/view_main_background_show_email"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/view_main_background_show_password"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_main_background_show_email" />
+
+        <EditText
+            android:id="@+id/edittext_main_show_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_edittexts"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="@id/view_main_background_show_password"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_background_show_password"
+            app:layout_constraintStart_toStartOf="@+id/view_main_background_show_password"
+            app:layout_constraintTop_toTopOf="@+id/view_main_background_show_password"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/view_main_background_show_gender"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_main_background_show_password" />
+
+        <EditText
+            android:id="@+id/edittext_main_show_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_edittexts"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/view_main_background_show_gender"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_background_show_gender"
+            app:layout_constraintStart_toStartOf="@+id/view_main_background_show_gender"
+            app:layout_constraintTop_toTopOf="@+id/view_main_background_show_gender"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/view_main_background_hideInfo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_main_background_show_gender" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_main_hideInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_button_hideinfo"
+            android:text="@string/text_button_hideinfo"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/view_main_background_hideInfo"
+            app:layout_constraintEnd_toEndOf="@+id/view_main_background_hideInfo"
+            app:layout_constraintStart_toStartOf="@+id/view_main_background_hideInfo"
+            app:layout_constraintTop_toTopOf="@+id/view_main_background_hideInfo" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_show_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="
+            view_main_background_show_fullname,
+            edittext_main_show_fullname,
+            view_main_background_show_username,
+            edittext_main_show_username,
+            view_main_background_show_email,
+            edittext_main_show_email,
+            view_main_background_show_password,
+            edittext_main_show_password,
+            view_main_background_show_gender,
+            edittext_main_show_gender,
+            view_main_background_hideInfo,
+            button_main_hideInfo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
